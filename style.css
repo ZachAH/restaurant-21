@@ -1,13 +1,10 @@
 html {
-  height: 100%;
-}
-
-body {
-  background-color: rgb(27, 37, 37);
-  background-image: url(images/pizzaBackground.jpg);
+  /* height: 100%; */
+  background: url(images/pizzaBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .container {
@@ -19,6 +16,7 @@ body {
 header {
   height: 118px;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 nav {
@@ -35,13 +33,18 @@ nav a {
   padding-right: 10px;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(2.0);
+  font-size: 17px;
+}
+
 main {
   height: 500px;
   text-align: center;
   padding-top: 20px;
   padding-left: 240px;
   padding-right: 240px;
-  justify-content: center;
 }
 
 footer {
@@ -70,4 +73,9 @@ p {
 a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.maps {
+  margin-left: 540px;
+  /* margin-right: 700px; */
 }
